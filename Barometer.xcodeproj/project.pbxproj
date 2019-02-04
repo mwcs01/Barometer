@@ -13,7 +13,57 @@
 		30E4025D220644D500BA3B27 /* Barometer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30E4025B220644D500BA3B27 /* Barometer.xcdatamodeld */; };
 		30E4025F220644D700BA3B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E4025E220644D700BA3B27 /* Assets.xcassets */; };
 		30E40262220644D700BA3B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E40260220644D700BA3B27 /* LaunchScreen.storyboard */; };
+		30E4026F22064CB000BA3B27 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E4026D22064CB000BA3B27 /* Interface.storyboard */; };
+		30E4027122064CB000BA3B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E4027022064CB000BA3B27 /* Assets.xcassets */; };
+		30E4027822064CB100BA3B27 /* Barometer Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30E4027722064CB100BA3B27 /* Barometer Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		30E4027D22064CB100BA3B27 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E4027C22064CB100BA3B27 /* InterfaceController.swift */; };
+		30E4027F22064CB100BA3B27 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E4027E22064CB100BA3B27 /* ExtensionDelegate.swift */; };
+		30E4028122064CB100BA3B27 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E4028022064CB100BA3B27 /* NotificationController.swift */; };
+		30E4028322064CB100BA3B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E4028222064CB100BA3B27 /* Assets.xcassets */; };
+		30E4028822064CB100BA3B27 /* Barometer Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 30E4026B22064CB000BA3B27 /* Barometer Watch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30E4027922064CB100BA3B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E40249220644D500BA3B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E4027622064CB100BA3B27;
+			remoteInfo = "Barometer Watch Extension";
+		};
+		30E4028622064CB100BA3B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E40249220644D500BA3B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E4026A22064CB000BA3B27;
+			remoteInfo = "Barometer Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30E4028C22064CB100BA3B27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				30E4027822064CB100BA3B27 /* Barometer Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E4029022064CB100BA3B27 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				30E4028822064CB100BA3B27 /* Barometer Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30E40251220644D500BA3B27 /* Barometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +74,28 @@
 		30E4025E220644D700BA3B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E40261220644D700BA3B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30E40263220644D700BA3B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E4026B22064CB000BA3B27 /* Barometer Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barometer Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E4026E22064CB000BA3B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		30E4027022064CB000BA3B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30E4027222064CB000BA3B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E4027722064CB100BA3B27 /* Barometer Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Barometer Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E4027C22064CB100BA3B27 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		30E4027E22064CB100BA3B27 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		30E4028022064CB100BA3B27 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		30E4028222064CB100BA3B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30E4028422064CB100BA3B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E4028522064CB100BA3B27 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30E4024E220644D500BA3B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E4027422064CB100BA3B27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				30E40253220644D500BA3B27 /* Barometer */,
+				30E4026C22064CB000BA3B27 /* Barometer Watch */,
+				30E4027B22064CB100BA3B27 /* Barometer Watch Extension */,
 				30E40252220644D500BA3B27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				30E40251220644D500BA3B27 /* Barometer.app */,
+				30E4026B22064CB000BA3B27 /* Barometer Watch.app */,
+				30E4027722064CB100BA3B27 /* Barometer Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +139,29 @@
 			path = Barometer;
 			sourceTree = "<group>";
 		};
+		30E4026C22064CB000BA3B27 /* Barometer Watch */ = {
+			isa = PBXGroup;
+			children = (
+				30E4026D22064CB000BA3B27 /* Interface.storyboard */,
+				30E4027022064CB000BA3B27 /* Assets.xcassets */,
+				30E4027222064CB000BA3B27 /* Info.plist */,
+			);
+			path = "Barometer Watch";
+			sourceTree = "<group>";
+		};
+		30E4027B22064CB100BA3B27 /* Barometer Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				30E4027C22064CB100BA3B27 /* InterfaceController.swift */,
+				30E4027E22064CB100BA3B27 /* ExtensionDelegate.swift */,
+				30E4028022064CB100BA3B27 /* NotificationController.swift */,
+				30E4028222064CB100BA3B27 /* Assets.xcassets */,
+				30E4028422064CB100BA3B27 /* Info.plist */,
+				30E4028522064CB100BA3B27 /* PushNotificationPayload.apns */,
+			);
+			path = "Barometer Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +172,51 @@
 				30E4024D220644D500BA3B27 /* Sources */,
 				30E4024E220644D500BA3B27 /* Frameworks */,
 				30E4024F220644D500BA3B27 /* Resources */,
+				30E4029022064CB100BA3B27 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30E4028722064CB100BA3B27 /* PBXTargetDependency */,
 			);
 			name = Barometer;
 			productName = Barometer;
 			productReference = 30E40251220644D500BA3B27 /* Barometer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		30E4026A22064CB000BA3B27 /* Barometer Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E4028D22064CB100BA3B27 /* Build configuration list for PBXNativeTarget "Barometer Watch" */;
+			buildPhases = (
+				30E4026922064CB000BA3B27 /* Resources */,
+				30E4028C22064CB100BA3B27 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30E4027A22064CB100BA3B27 /* PBXTargetDependency */,
+			);
+			name = "Barometer Watch";
+			productName = "Barometer Watch";
+			productReference = 30E4026B22064CB000BA3B27 /* Barometer Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		30E4027622064CB100BA3B27 /* Barometer Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E4028922064CB100BA3B27 /* Build configuration list for PBXNativeTarget "Barometer Watch Extension" */;
+			buildPhases = (
+				30E4027322064CB100BA3B27 /* Sources */,
+				30E4027422064CB100BA3B27 /* Frameworks */,
+				30E4027522064CB100BA3B27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Barometer Watch Extension";
+			productName = "Barometer Watch Extension";
+			productReference = 30E4027722064CB100BA3B27 /* Barometer Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +229,12 @@
 				ORGANIZATIONNAME = "James Baughman";
 				TargetAttributes = {
 					30E40250220644D500BA3B27 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					30E4026A22064CB000BA3B27 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					30E4027622064CB100BA3B27 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -116,6 +253,8 @@
 			projectRoot = "";
 			targets = (
 				30E40250220644D500BA3B27 /* Barometer */,
+				30E4026A22064CB000BA3B27 /* Barometer Watch */,
+				30E4027622064CB100BA3B27 /* Barometer Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +267,23 @@
 				30E40262220644D700BA3B27 /* LaunchScreen.storyboard in Resources */,
 				30E4025F220644D700BA3B27 /* Assets.xcassets in Resources */,
 				30E4025A220644D500BA3B27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E4026922064CB000BA3B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E4027122064CB000BA3B27 /* Assets.xcassets in Resources */,
+				30E4026F22064CB000BA3B27 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E4027522064CB100BA3B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E4028322064CB100BA3B27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +300,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30E4027322064CB100BA3B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E4028122064CB100BA3B27 /* NotificationController.swift in Sources */,
+				30E4027F22064CB100BA3B27 /* ExtensionDelegate.swift in Sources */,
+				30E4027D22064CB100BA3B27 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30E4027A22064CB100BA3B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E4027622064CB100BA3B27 /* Barometer Watch Extension */;
+			targetProxy = 30E4027922064CB100BA3B27 /* PBXContainerItemProxy */;
+		};
+		30E4028722064CB100BA3B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E4026A22064CB000BA3B27 /* Barometer Watch */;
+			targetProxy = 30E4028622064CB100BA3B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30E40258220644D500BA3B27 /* Main.storyboard */ = {
@@ -161,6 +340,14 @@
 				30E40261220644D700BA3B27 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		30E4026D22064CB000BA3B27 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E4026E22064CB000BA3B27 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,13 +474,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62KBMLS53A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Barometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.midwestcompsol.Barometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,16 +492,98 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62KBMLS53A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Barometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.midwestcompsol.Barometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30E4028A22064CB100BA3B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Barometer Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		30E4028B22064CB100BA3B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Barometer Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		30E4028E22064CB100BA3B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Barometer_Watch_Extension;
+				INFOPLIST_FILE = "Barometer Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		30E4028F22064CB100BA3B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Barometer_Watch_Extension;
+				INFOPLIST_FILE = "Barometer Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.Barometer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -335,6 +604,24 @@
 			buildConfigurations = (
 				30E40267220644D700BA3B27 /* Debug */,
 				30E40268220644D700BA3B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E4028922064CB100BA3B27 /* Build configuration list for PBXNativeTarget "Barometer Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E4028A22064CB100BA3B27 /* Debug */,
+				30E4028B22064CB100BA3B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E4028D22064CB100BA3B27 /* Build configuration list for PBXNativeTarget "Barometer Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E4028E22064CB100BA3B27 /* Debug */,
+				30E4028F22064CB100BA3B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
